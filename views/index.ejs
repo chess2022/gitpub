@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>GitPub App</title>
+    <link rel="stylesheet" href="app.css" type="text/css">
+
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="empty"></div>
+        <div>
+          <h1>Welcome to GitPub</h1>
+          <h3>What'll it be???</h3>
+          <ul>
+            <% for( let drink in allDrinks ) { %>
+            <li>
+              <a href="/drinks/<%=drink%>"><%=allDrinks[drink].name %></a>
+            </li>
+            <% } %>
+          </ul>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+body {
+    color: blanchedalmond;
+    background-color: black;
+    width: 80%;
+    margin:auto;
+    text-transform:capitalize;
+  }
+
+.container {
+  display: flex;
+  flex: 1 1;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.empty {
+  background-image: url("bartender.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+}
+
