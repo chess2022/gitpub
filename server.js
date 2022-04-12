@@ -8,7 +8,7 @@ const PORT = process.env.PORT;
 const drinks = require("./models/drinks.js");
 
 // Declare middleware
-app.use(express.static("public"));
+app.use("/static", express.static("public"));
 
 // Declare routes and routers
 
@@ -29,5 +29,5 @@ app.get("/drinks/:id", (req, res) => {
 // Setup listener
 
 app.listen(PORT, () => {
-  console.log(`We are listening on port Deltron ${PORT}`);
+  console.log(`We are listening on port ${PORT}`);
 });

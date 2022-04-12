@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>GitPub App</title>
+    <link rel="stylesheet" href="/static/app.css">
+
   </head>
   <body>
-    <h1>Drinks show page</h1>
-    Drink: <%= drink.name %> <br>
-    Price: $<%= drink.price %> <br>
-    <img src= "<%= drink.image %>">
-    <br>
-    <a href="/drinks">Back to Index</a>
+    <div class="container">
+        <div class="empty"></div>
+        <div class="info">
+          <h1>At Foo Bar</h1>
+          <div class="drink">
+            <div><img src= "<%= drink.image %>"></div>
+            <div class="drinkInfo"><h2> <%= drink.name %> </h2>
+            <h3>$<%= drink.price %></h3>
+            <a href="/drinks">Back to Drink Menu</a></div>
+          </div>
+        </div>
+    </div>
   </body>
 </html>
