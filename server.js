@@ -6,7 +6,7 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT;
 const drinks = require("./models/drinks.js");
-const food = require("./models/food");
+const food = require("./models/food.js");
 
 // Declare middleware
 app.use("/static", express.static("public"));
